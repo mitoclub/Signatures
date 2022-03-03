@@ -1,5 +1,7 @@
 data/*
 !data/share
+!data/external
+data/external/human_genome
 *.sif
 env*
 *.ipynb_checkpoints

@@ -2,9 +2,9 @@ from collections import defaultdict
 import json
 import pandas as pd
 
-PATH_TO_HUMAN_COUNTS = "./data/signatures/GRCh37_codon_counts.json"
+PATH_TO_HUMAN_COUNTS = "./data/interim/GRCh37_codon_counts.json"
 PATH_TO_SIGNATURES = "./data/external/reference_sig_GRCh37/COSMIC_v3.2_SBS_GRCh37.txt"
-PATH_TO_SIGNATURES_NORMALIZED = "./data/signatures/COSMIC_v3.2_SBS_GRCh37_normalized.txt"
+PATH_TO_SIGNATURES_NORMALIZED = "./data/interim/COSMIC_v3.2_SBS_GRCh37_normalized.txt"
 
 
 def load_triplet_counts(path: str):
