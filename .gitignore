@@ -1,0 +1,7 @@
+data/*
+!data/share
+*.sif
+env*
+*.ipynb_checkpoints
+signatures.egg-info
+*__pycache__
