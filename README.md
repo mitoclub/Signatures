@@ -28,9 +28,10 @@ Games with mutational signatures
 
 ## References
 1. [SigProfilerExtractor repo](https://github.com/AlexandrovLab/SigProfilerExtractor). Contains links to wiki that is not about latest release, but main concept understandable, especially output description. Latest main functionality description contains in repo readme (in wiki there are old version)
-2. [Paper](https://www.biorxiv.org/content/10.1101/2020.12.13.422570v2.full) about SigProfilerExtractor methods
 2. [Paper](https://www.nature.com/articles/s41598-021-04207-6) about coparison of different mutational signature softwares
-3. [Alexandorv paper [2020]](https://www.nature.com/articles/s41586-020-1943-3) about COSMIC update and current signatures in general. **Need to read**
+2. [Alexandrov preprint [2020]](https://www.biorxiv.org/content/10.1101/2020.12.13.422570v2.full) Uncovering novel mutational signatures by de novo extraction with SigProfilerExtractor. **About SigProfilerExtractor methods** **TODO read**
+3. [Alexandrov paper [2020]](https://www.nature.com/articles/s41586-020-1943-3) The repertoire of mutational signatures in human cancer. About COSMIC update and current signatures in general. **TODO read**
+4. [Alexandrov paper [2013]](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3588146/) Deciphering Signatures of Mutational Processes Operative in Human Cancer - **mathematical concept of mutational signatures**, **TODO read**
 4. Serena's papers
 5. ...
 
