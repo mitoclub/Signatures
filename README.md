@@ -33,6 +33,8 @@ n \cdot M' = n \cdot S' \cdot A \\
 M' = S' \cdot A
 $$ -->
 
+<img src="https://latex.codecogs.com/svg.image?M&space;=&space;S&space;\cdot&space;A" title="https://latex.codecogs.com/svg.image?M = S \cdot A" />
+
 <img src="https://latex.codecogs.com/svg.latex?\bg{white} M=S \cdot A"/><br>
 <img src="https://latex.codecogs.com/svg.latex?\bg{white} n \cdot M' = n \cdot S' \cdot A"/><br>
 <img src="https://latex.codecogs.com/svg.latex?\bg{white} M' = S' \cdot A"/>
