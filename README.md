@@ -1,14 +1,16 @@
 Games with mutational signatures
 ------------
 
+## Process description
+<img src="./figures/SigProfilerExtractor_approach.jpg" width="500">
+
 ## Plan
 - use bootstraping (if there are no many mutspec samples)
-- Check 1. Run sig extraction on normalized mutspecs and unnormalized. Then normalize signatures of 2nd as we normalize COSMIC. After that compare both normalized signatures by cossim. If they are equal, we can use normalized COSMIC in our normalized mutspecs decomposition.
-- Read the [paper](https://www.biorxiv.org/content/10.1101/2020.12.13.422570v2.full) about SigProfilerExtractor
-- ~~Check 2. Run extraction on 2 mutspec datasets with different normalization component and compare results for normalized and not mutspecs. Signatures of normalized mutspecs must be more similar than for not normalized - result is obvious. Pass it ~~
+- ~Check 1. Run sig extraction on normalized mutspecs and unnormalized. Then normalize signatures of 2nd as we normalize COSMIC. After that compare both normalized signatures by cossim. If they are equal, we can use normalized COSMIC in our normalized mutspecs decomposition.~
+- ~Read the [paper](https://www.biorxiv.org/content/10.1101/2020.12.13.422570v2.full) about SigProfilerExtractor~
+- ~Check 2. Run extraction on 2 mutspec datasets with different normalization component and compare results for normalized and not mutspecs. Signatures of normalized mutspecs must be more similar than for not normalized - result is obvious. Pass it ~ - useless, proved by equations below
 - Look at another [signature database](https://signal.mutationalsignatures.com/explore/mutagens)
 - Extract normalized signatures from different datasets
-
 
 <img src="./figures/Signatures_plan.drawio.png" width="500">
 
@@ -16,14 +18,32 @@ Games with mutational signatures
 ## Signatures Purpose
 - Nature of mutagens
 - Comparison of different mutspecs in terms of shares of different mutational processes
-- Extraction of new signatures of mutational processes (long lived mammals, hot fishes etc.)
+- *Extraction of new signatures of mutational processes (long lived mammals, hot fishes etc.)* - questionable aim, because novel extracted signatures must be validated by wet experiments and must be biologically reasonable
 - 
 
 ## Open questions
-- Why can we use normalized database of signatures?
+- ~Why can we use normalized database of signatures?~
 - Do we need positive or negative controls?
+- How to sample mutational spectra from phylogenetic tree? Decomposition of one mutspec don't use the power of NMF, that 
 
+## Simple equations about normalized sig-db
+$$
+M = S \cdot A \\
+n \cdot M' = n \cdot S' \cdot A \\
+M' = S' \cdot A
+$$
 
+Where:
+<br>
+$M$ - raw Mutational spectra matrix in human (or mice, depends on COSMIC) genome;
+<br>
+$S$ - Signatures matrix;
+<br>
+$A$ - Activation matrix, indicating representation of each signature in each sample;
+<br>
+$n$ - Normalization vector, that contains trinucleotide frequencies of used genome;
+<br>
+$X'$ - normalized $X$ matrix without genome connection.
 
 
 ## References
