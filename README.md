@@ -27,25 +27,27 @@ Games with mutational signatures
 - How to sample mutational spectra from phylogenetic tree? Decomposition of one mutspec don't use the power of NMF, that 
 
 ## Simple equations about normalized sig-db
-$$
+<!-- $$
 M = S \cdot A \\
 n \cdot M' = n \cdot S' \cdot A \\
 M' = S' \cdot A
-$$
+$$ -->
 
-<img src="https://latex.codecogs.com/svg.latex?\Large&space;x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}"/>
+<img src="https://latex.codecogs.com/svg.latex?\bg{white} M=S \cdot A"/><br>
+<img src="https://latex.codecogs.com/svg.latex?\bg{white} n \cdot M' = n \cdot S' \cdot A"/><br>
+<img src="https://latex.codecogs.com/svg.latex?\bg{white} M' = S' \cdot A"/>
 
 Where:
 <br>
-$M$ - raw Mutational spectra matrix in human (or mice, depends on COSMIC) genome;
+M - raw Mutational spectra matrix in human (or mice, depends on COSMIC) genome;
 <br>
-$S$ - Signatures matrix;
+S - Signatures matrix;
 <br>
-$A$ - Activation matrix, indicating representation of each signature in each sample;
+A - Activation matrix, indicating representation of each signature in each sample;
 <br>
-$n$ - Normalization vector, that contains trinucleotide frequencies of used genome;
+n - Normalization vector, that contains trinucleotide frequencies of used genome;
 <br>
-$X'$ - normalized $X$ matrix without genome connection.
+X' - normalized X matrix without genome connection.
 
 
 ## References
