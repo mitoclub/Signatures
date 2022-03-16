@@ -8,7 +8,7 @@ Games with mutational signatures
 - use bootstraping (if there are no many mutspec samples)
 - ~Check 1. Run sig extraction on normalized mutspecs and unnormalized. Then normalize signatures of 2nd as we normalize COSMIC. After that compare both normalized signatures by cossim. If they are equal, we can use normalized COSMIC in our normalized mutspecs decomposition.~
 - ~Read the [paper](https://www.biorxiv.org/content/10.1101/2020.12.13.422570v2.full) about SigProfilerExtractor~
-- ~Check 2. Run extraction on 2 mutspec datasets with different normalization component and compare results for normalized and not mutspecs. Signatures of normalized mutspecs must be more similar than for not normalized - result is obvious. Pass it ~ - useless, proved by equations below
+- ~Check 2. Run extraction on 2 mutspec datasets with different normalization component and compare results for normalized and not mutspecs. Signatures of normalized mutspecs must be more similar than for not normalized - result is obvious. Pass it~ - useless, proved by equations below
 - Look at another [signature database](https://signal.mutationalsignatures.com/explore/mutagens)
 - Extract normalized signatures from different datasets
 
@@ -32,6 +32,8 @@ M = S \cdot A \\
 n \cdot M' = n \cdot S' \cdot A \\
 M' = S' \cdot A
 $$
+
+<img src="https://latex.codecogs.com/svg.latex?\Large&space;x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}"/>
 
 Where:
 <br>
