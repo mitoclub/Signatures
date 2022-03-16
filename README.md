@@ -33,9 +33,9 @@ n \cdot M' = n \cdot S' \cdot A \\
 M' = S' \cdot A
 $$ -->
 
-<img src="https://latex.codecogs.com/svg.latex?\Large&space;M=S \cdot A"/><br>
-<img src="https://latex.codecogs.com/svg.latex?\Large&space;n \cdot M' = n \cdot S' \cdot A"/><br>
-<img src="https://latex.codecogs.com/svg.latex?\Large&space;M' = S' \cdot A"/>
+<img src="https://latex.codecogs.com/svg.image?M&space;=&space;S&space;\cdot&space;A" title="https://latex.codecogs.com/svg.image?M = S \cdot A" /><br>
+<img src="https://latex.codecogs.com/svg.image?n&space;\cdot&space;M'&space;=&space;n&space;\cdot&space;S'&space;\cdot&space;A&space;" title="https://latex.codecogs.com/svg.image?n \cdot M' = n \cdot S' \cdot A " /><br>
+<img src="https://latex.codecogs.com/svg.image?M'&space;=&space;S'&space;\cdot&space;A" title="https://latex.codecogs.com/svg.image?M' = S' \cdot A" />
 
 Where:
 <br>
