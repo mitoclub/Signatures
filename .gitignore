@@ -1,6 +1,6 @@
-data/*
-!data/share
-!data/external
+# data/*
+# !data/share
+# !data/external
 data/external/human_genome
 *.sif
 env*
