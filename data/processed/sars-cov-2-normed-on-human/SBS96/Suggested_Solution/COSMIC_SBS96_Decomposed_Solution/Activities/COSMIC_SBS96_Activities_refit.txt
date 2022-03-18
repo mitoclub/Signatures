@@ -1,0 +1,3 @@
+Samples	SBS1	SBS5	SBS19
+sars-cov-2_ff_m_floor	0	2816	1564
+sars-cov-2_ff_m_ceil	0	2904	1572

@@ -1,0 +1,3 @@
+Sample Names	Total Mutations	Cosine Similarity	L1 Norm	L1_Norm_%	L2 Norm	L2_Norm_%	KL Divergence	Correlation
+sars-cov-2_ff_m_floor	4381	0.877	2626.315	59.948%	381.787	49.948%	0.34259	0.813
+sars-cov-2_ff_m_ceil	4477	0.877	2627.554	58.69%	384.956	49.985%	0.32477	0.813

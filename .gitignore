@@ -2,6 +2,7 @@
 # !data/share
 # !data/external
 data/external/human_genome
+data/processed/*/SBS96/All_Solutions
 *.sif
 env*
 *.ipynb_checkpoints

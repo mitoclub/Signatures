@@ -1,0 +1,28 @@
+************************ Stepwise Description of Signature Assignment to Samples ************************
+
+
+
+
+                    ################ Sample 1 #################
+############################# Initial Composition ####################################
+   SBS96A
+0  4381.0
+############################## Composition After  Remove ###############################
+   SBS96A
+0  4381.0
+L2 Error %: 0.01
+Cosine Similarity: 1.0
+
+
+
+
+
+                    ################ Sample 2 #################
+############################# Initial Composition ####################################
+   SBS96A
+0  4477.0
+############################## Composition After  Remove ###############################
+   SBS96A
+0  4477.0
+L2 Error %: 0.01
+Cosine Similarity: 1.0

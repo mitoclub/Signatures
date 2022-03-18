@@ -1,0 +1,3 @@
+Samples	SBS96A
+sars-cov-2_ff_m_floor	4381
+sars-cov-2_ff_m_ceil	4477
