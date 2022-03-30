@@ -1,4 +1,4 @@
-"","NucSubst","ObsFr","ExpFr","ObsToExp","MutSpec"
+"","NucSubst","ObsFr","ExpFr","RawMutSpec","MutSpec"
 "1","AAA>ACA",NA,NA,0,0
 "2","AAA>AGA",NA,NA,0,0
 "3","AAA>AUA",NA,NA,0,0

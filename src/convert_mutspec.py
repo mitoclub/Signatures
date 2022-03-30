@@ -20,7 +20,7 @@ PATH_TO_MUTSPEC_192 = "./data/raw/sars-cov-2_ff_mutspec_192comp.csv"
 PATH_TO_OUT = "./data/mutspec_96.tsv"
 MAX_CHAR_NUM = 15
 
-COLS = ["NucSubst" ,"ObsFr" ,"ExpFr", "ObsToExp"]
+COLS = ["NucSubst", "RawMutSpec"]
 translator = str.maketrans("ATGC", "TACG")
 
 
@@ -51,7 +51,7 @@ def process_one_mutspec(path: str, label=None, rounding=True):
     assert mutspec192.shape[0] == 192, "Not all mutations in mutspec!!!"
     mutspec192["MutType"] = mutspec192.NucSubst.apply(reformat_mutspec)
 
-    mutspec96 = mutspec192.groupby("MutType").ObsToExp.sum().reset_index()
+    mutspec96 = mutspec192.groupby("MutType").RawMutSpec.sum().reset_index()
     mutspec96.columns = ["Mutation Types", label]
     if rounding:
         mutspec96[label] = mutspec96[label].round(0).astype(int)
