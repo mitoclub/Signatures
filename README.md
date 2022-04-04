@@ -25,6 +25,8 @@ Games with mutational signatures
 - ~Why can we use normalized database of signatures?~
 - ~Do we need positive or negative controls?~ Negative and/or negative controls was implemented by Alexandrov et al. by assessing the tool (we can repeat). Positive control could be implemented using mutation accumulation experiments with distinct mutagens as in Kucab, 2019. 
 - How to sample mutational spectra from phylogenetic tree? Decomposition of one mutspec don't use the power of NMF. But if we sample mutspecs from different clades of tree we can extract different mutational processes. - If mean phylogenetic distance of branches is huge as in birds tree, we should use branch mutational spectra for decomposition because of huge number of mutations (200-1000). Else we should somehow sample mutspec from clades or use overall mutspec of full tree as in case of coronavirus or hominida trees
+- Fourfold mutspec don't have some mutations due to absence of some trinucleotide contexts in fourfold positions. Consequently, we lose information. We can back to synonumous mutspec or don't mind it. **What the best way?**
+
 
 ## Simple equations about normalized sig-db
 <!-- $$
@@ -43,6 +45,10 @@ S - Signatures matrix;<br>
 A - Activation matrix, indicating representation of each signature in each sample;<br>
 n - Normalization vector, that contains trinucleotide frequencies of used genome;<br>
 X' - normalized X matrix without genome connection.
+
+## Collapse 192 to 96
+0. Main mutations are C>N and T>N. To collapse 192 we need to do **reverse complement** transformation of x[G>N]y and x[A>N]y;
+1. Asymmetrical mutspec could be divided by 2 mutspec from different strands
 
 ## Reference genomes:
 - COSMIC, Kucab et al. use **GRCh37**;

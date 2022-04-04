@@ -1,14 +1,3 @@
-"""
-format mutspec table to such style for SigProfilerExtractor:
-
-Mutation Types      Sample1 Sample2
-A[C>A]A             58      74
-A[C>A]C             36      66
-A[C>A]G             13      12
-A[C>A]T             37      64
-
-C>A, C>G, C>T, T>A, T>C, T>G
-"""
 import os
 import random
 from functools import reduce, partial
@@ -44,11 +33,7 @@ def reformat_mut_style(nuc_subst: str):
     return new_style_subst
 
 
-def process_one_mutspec(path: str, label=None, rounding=True):
-    # label = label or "Sample_{:02}".format(random.randint(1, 99))
-    label = label or os.path.basename(path)[:MAX_CHAR_NUM].rstrip(".csv").replace(".", "")
-
-    mutspec192 = pd.read_csv(path, usecols=COLS)
+def process_one_mutspec(mutspec192: pd.DataFrame, rounding=True):
     assert mutspec192.shape[0] == 192, "Not all mutations in mutspec!!!"
     mutspec192["MutType"] = mutspec192.NucSubst.apply(reformat_mut_style)
 
@@ -64,16 +49,16 @@ def write_mutspec(data: pd.DataFrame, path):
 
 
 @click.command("converter", help="Convert 192-component mutational spectra to 96-component format")
-@click.argument("mutspec_path", nargs=-1, required=True, type=click.Path(True))
+@click.argument("mutspec_path", required=True, type=click.Path(True))
 @click.option("--round/--no-round", default=False, show_default=True, help="maximum number of signatures to release")
 @click.option("--out",  required=True, type=click.Path(), help="path to output mutspec96-sample table")
 def main(mutspec_path, round, out):
-    mutspec = []
-    for path in mutspec_path:
-        m = process_one_mutspec(path, rounding=round)
-        mutspec.append(m)
-    
-    mutspec = reduce(partial(pd.merge, on="Mutation Types"), mutspec)
+    mutspec192 = pd.read_csv(mutspec_path)
+    if mutspec192["NucSubst"].str.contains("^\w{3}>\w{3}$").sum() == 192:
+        # collapsing: AGG>ATG -> A[G>T]G -> C[C>A]T
+
+
+    mutspec = process_one_mutspec(mutspec192, rounding=round)
     write_mutspec(mutspec, out)
 
 

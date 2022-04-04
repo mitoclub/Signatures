@@ -10,3 +10,4 @@ signatures.egg-info
 *__pycache__
 data/output_example_decomp
 data/external/Examples
+data/raw/birds
