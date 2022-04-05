@@ -11,3 +11,4 @@ signatures.egg-info
 data/output_example_decomp
 data/external/Examples
 data/raw/birds
+data/processed/sars_divided192
