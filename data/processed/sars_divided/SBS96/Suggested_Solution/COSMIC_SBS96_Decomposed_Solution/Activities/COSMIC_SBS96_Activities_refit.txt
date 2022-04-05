@@ -1,0 +1,4 @@
+Samples	SBS1	SBS2	SBS5	SBS7a	SBS7b	SBS29
+sars_cov_2_full	4893	0	34306	8289	15774	0
+sars_cov_2_plus	3748	6766	29187	0	23624	0
+sars_cov_2_minus	867	0	3234	2041	1777	4474

@@ -1,0 +1,4 @@
+Sample Names	Total Mutations	Cosine Similarity	L1 Norm	L1_Norm_%	L2 Norm	L2_Norm_%	KL Divergence	Correlation
+sars_cov_2_full	63262	1.0	53.86	0.085%	8.224	0.073%	0.0	1.0
+sars_cov_2_plus	63325	1.0	48.048	0.076%	8.905	0.067%	0.0	1.0
+sars_cov_2_minus	12393	1.0	22.148	0.179%	3.35	0.133%	2e-05	1.0

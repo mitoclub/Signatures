@@ -1,0 +1,84 @@
+THIS FILE CONTAINS THE METADATA ABOUT SYSTEM AND RUNTIME
+
+
+-------System Info-------
+Operating System Name: Linux
+Nodename: mitoclub-System-Product-Name
+Release: 5.13.0-39-generic
+Version: #44~20.04.1-Ubuntu SMP Thu Mar 24 16:43:35 UTC 2022
+
+-------Python and Package Versions------- 
+Python Version: 3.9.5
+SigProfilerExtractor Version: 1.1.5
+SigProfilerPlotting Version: 1.2.1
+SigProfilerMatrixGenerator Version: 1.2.4
+Pandas version: 1.3.5
+Numpy version: 1.21.5
+Scipy version: 1.7.3
+Scikit-learn version: 1.0.2
+
+--------------EXECUTION PARAMETERS--------------
+INPUT DATA
+	input_type: matrix
+	output: data/processed/sars_divided
+	input_data: data/sars-cov-2_96.tsv
+	reference_genome: GRCh37
+	context_types: SBS96
+	exome: False
+NMF REPLICATES
+	minimum_signatures: 1
+	maximum_signatures: 7
+	NMF_replicates: 500
+NMF ENGINE
+	NMF_init: random
+	precision: single
+	matrix_normalization: gmm
+	resample: True
+	seeds: random
+	min_NMF_iterations: 10,000
+	max_NMF_iterations: 1,000,000
+	NMF_test_conv: 10,000
+	NMF_tolerance: 1e-15
+CLUSTERING
+	clustering_distance: cosine
+EXECUTION
+	cpu: 20; Maximum number of CPU is 24
+	gpu: False
+Solution Estimation
+	stability: 0.8
+	min_stability: 0.2
+	combined_stability: 1.0
+COSMIC MATCH
+	opportunity_genome: GRCh37
+\cosmic_version: 3.1
+	nnls_add_penalty: 0.05
+	nnls_remove_penalty: 0.01
+	initial_remove_penalty: 0.05
+	de_novo_fit_penalty: 0.02
+	refit_denovo_signatures: True
+	collapse_to_SBS96: True
+
+-------Analysis Progress------- 
+[2022-04-05 12:51:37] Analysis started: 
+
+##################################
+
+[2022-04-05 12:51:37] Analysis started for SBS96. Matrix size [96 rows x 3 columns]
+
+[2022-04-05 12:51:37] Normalization GMM with cutoff value set at 63262
+
+[2022-04-05 12:52:28] SBS96 de novo extraction completed for a total of 1 signatures! 
+Execution time:0:00:51
+
+[2022-04-05 12:53:33] SBS96 de novo extraction completed for a total of 2 signatures! 
+Execution time:0:01:04
+
+[2022-04-05 12:57:42] SBS96 de novo extraction completed for a total of 3 signatures! 
+Execution time:0:04:08
+
+[2022-04-05 12:57:54] Analysis ended: 
+
+-------Job Status------- 
+Analysis of mutational signatures completed successfully! 
+Total execution time: 0:06:16 
+Results can be found in:  data/processed/sars_divided  folder

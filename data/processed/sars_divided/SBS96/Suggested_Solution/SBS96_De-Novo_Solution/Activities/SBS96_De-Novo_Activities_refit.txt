@@ -1,0 +1,4 @@
+Samples	SBS96A	SBS96B
+sars_cov_2_full	32271	30991
+sars_cov_2_plus	63325	0
+sars_cov_2_minus	0	12393
