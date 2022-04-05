@@ -26,6 +26,7 @@ Games with mutational signatures
 - ~Do we need positive or negative controls?~ Negative and/or negative controls was implemented by Alexandrov et al. by assessing the tool (we can repeat). Positive control could be implemented using mutation accumulation experiments with distinct mutagens as in Kucab, 2019. 
 - How to sample mutational spectra from phylogenetic tree? Decomposition of one mutspec don't use the power of NMF. But if we sample mutspecs from different clades of tree we can extract different mutational processes. - If mean phylogenetic distance of branches is huge as in birds tree, we should use branch mutational spectra for decomposition because of huge number of mutations (200-1000). Else we should somehow sample mutspec from clades or use overall mutspec of full tree as in case of coronavirus or hominida trees
 - Fourfold mutspec don't have some mutations due to absence of some trinucleotide contexts in fourfold positions. Consequently, we lose information. We can back to synonumous mutspec or don't mind it. **What the best way?**
+- Passed MutSig-db to SigProfiler decomposition (to db) process have mutation order. Does this order mean or random order could be passed? COSMIC files use sorted order.
 
 
 ## Simple equations about normalized sig-db
