@@ -2,18 +2,7 @@ import SigProfilerAssignment as spa
 from SigProfilerAssignment import Analyzer as Analyze
 from SigProfilerAssignment import decomposition as decomp
 
-# from SigProfilerExtractor import sigpro as sig
-
-Analyze.decompose_fit()
-Analyze.denovo_fit()
-Analyze.cosmic_fit()
-
-
-decomp.spa_analyze()
-
-# decompose_fit_option= True,
-# denovo_refit_option=False,
-# cosmic_fit_option=False
+from SigProfilerExtractor import sigpro as sig
 
 
 # set directories and paths to signatures and samples

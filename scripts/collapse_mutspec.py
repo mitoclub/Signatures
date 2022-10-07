@@ -1,6 +1,4 @@
 import json
-import os
-import random
 from collections import defaultdict
 from functools import partial, reduce
 
@@ -104,8 +102,8 @@ def write_mutspec(data: pd.DataFrame, path):
 
 
 @click.command("converter", help="Convert 192-component mutational spectra to 96-component format")
-@click.argument("mutspec_path", required=True, type=click.Path(True))
-@click.option("--out",  required=True, type=click.Path(), help="path to output mutspec96-sample table (tsv)")
+@click.argument("mutspec_path", type=click.Path(True))
+@click.argument("out_tsv", type=click.Path(writable=True))
 @click.option("--scale/--no-scale", default=True, show_default=True, help="Divide by minimal value in sample mutspec or not")
 def main(mutspec_path, out, scale):
     mutspec192 = pd.read_csv(mutspec_path)
