@@ -1,9 +1,10 @@
 import SigProfilerAssignment as spa
 from SigProfilerAssignment import Analyzer as Analyze
 from SigProfilerAssignment import decomposition as decomp
-
 from SigProfilerExtractor import sigpro as sig
 
+import SigProfilerMatrixGenerator
+from SigProfilerMatrixGenerator.scripts import SigProfilerMatrixGeneratorFunc as matGen
 
 # set directories and paths to signatures and samples
 dir_inp = spa.__path__[0]+'/data/Examples/'
